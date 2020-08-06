@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>base</title>
+    {% endblock  %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+   {% include "partials/_header.html" %}
+   {% include "partials/_navbar.html" %}
+
+   {% block  content %}
+    <div class="container">
+        <div class="jumbotron">
+            <center><h1>WELCOME TO basePAGE</h1></center>
+            <img src="{% static 'images/R7.webp' %}" alt="no image found" height="100" width="200">
+            <img src="{% static 'images/R8.webp' %}" alt="no image found" height="100" width="200">
+            <img src="{% static 'images/R9.webp' %}" alt="no image found" height="100" width="200">
+            <img src="{% static 'images/R10.webp' %}" alt="no image found" height="100" width="200">
+        </div>
+    </div>
+    {% endblock  %}
+    
+    {% include "partials/_footer.html"%}
+
+
+    
+    
+</body>
+</html>
